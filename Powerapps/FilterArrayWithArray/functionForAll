@@ -1,1 +1,20 @@
+ClearCollect(
+    MenuFiltered,
+    ForAll(
+        MenuData As Aux,
+        If(
+            IsEmpty(
+                Filter(
+                    ForAll(
+                        RolesUsuario As Aux2,
+                        Aux2.Value in Aux.Roles
+                    ),
+                    ThisRecord.Value
+                )
+            ),
+            Blank(),
+            Aux
+        )
+    )
+)
 
