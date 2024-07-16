@@ -11,3 +11,5 @@ Set(UserEmail, User().Email);
   JobTitle:"",
   Picture:""
 }
+
+{ Claims:"i:0#.f|membership|" & UserEmail; Department:""; DisplayName:""; Email:""; JobTitle:""; Picture:"" }
